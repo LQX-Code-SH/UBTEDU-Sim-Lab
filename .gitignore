@@ -1,0 +1,33 @@
+# ===== 运行时 / 数据 =====
+shell/
+dataset/
+
+# ===== Python =====
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# ===== C++ / colcon 构建 =====
+teleoperation/bridges/_build/
+install/
+log/
+build/
+# 编译产物（保留 .cpp 源码，仅忽略无扩展名的 ELF 二进制）
+/teleoperation/bridges/zmq_image_bridge
+
+# ===== ROS2 录制 / 日志 =====
+*.bag
+*.db3
+*.mcap
+*.log
+
+# ===== 编辑器 / IDE / OS =====
+.vscode/
+.idea/
+*.swp
+*.swo
+.DS_Store
+Thumbs.db

@@ -1,0 +1,26 @@
+# Walker S2 Parlor Task Configuration
+# All paths are relative to the assets/ directory
+
+scene:
+  usd_path: "scenes/parlor/scene_v2.usd"
+  prim_path: "{ENV_REGEX_NS}/Scene"
+
+robot:
+  name: "walker_s2"
+  usd_path: "robots/walker_s2/s2_v1.usd"
+  init_state:
+    pos: [7.80, 6.08257, 0.90]
+    rot: [0.99939, 0.0, 0.0349, 0.0]
+
+cameras:
+  head_rgb:
+    # Use the USD-internal left head stereo camera as the published head RGB view.
+    prim_path: "{ENV_REGEX_NS}/Robot/head_pitch_link/head_stereo_left/head_stereo_left_Camera_01"
+    data_types: ["rgb"]
+    resolution: [640, 480]
+
+simulation:
+  dt: 0.01
+  decimation: 1
+  render_interval: 3
+  episode_length_s: 1000

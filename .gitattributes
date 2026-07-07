@@ -1,0 +1,20 @@
+# ===== 3D 模型 / 场景 (USD crate 二进制) =====
+*.usd   filter=lfs diff=lfs merge=lfs -text
+*.usda  filter=lfs diff=lfs merge=lfs -text
+*.usdc  filter=lfs diff=lfs merge=lfs -text
+
+# ===== 纹理贴图 =====
+*.png   filter=lfs diff=lfs merge=lfs -text
+*.jpg   filter=lfs diff=lfs merge=lfs -text
+*.jpeg  filter=lfs diff=lfs merge=lfs -text
+*.exr   filter=lfs diff=lfs merge=lfs -text
+*.hdr   filter=lfs diff=lfs merge=lfs -text
+
+# ===== 预留：后续若引入网格 / 环境贴图 =====
+*.stl   filter=lfs diff=lfs merge=lfs -text
+*.obj   filter=lfs diff=lfs merge=lfs -text
+*.glb   filter=lfs diff=lfs merge=lfs -text
+*.gltf  filter=lfs diff=lfs merge=lfs -text
+
+# ===== 预编译二进制分发包 =====
+*.deb   filter=lfs diff=lfs merge=lfs -text
